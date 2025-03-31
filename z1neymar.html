@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        body{
+            background-color: rgba(229, 255, 0, 0.39);
+        }
+
+        .rgb-footer {
+            position: fixed;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background-color 3 ease;
+        }
+
+        .lala {
+            font-size: 1.5em;
+        }
+
+        .papa {
+            margin-top: 65px;
+            margin-left: 50px;
+            border-radius: 100%;
+            
+        }
+
+        .text {
+            margin-left: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="rgb-footer" id="rgbFooter">
+        <div class="lala">Neymar</div>
+    </div>
+
+    <img src="pic2/njr10.jpg" alt="" width="200px" height="310px" class="papa">
+
+    <p class="text">
+       <b> Early life</b><br>
+        Neymar was born in Mogi das Cruzes, São Paulo, to Neymar Santos Sr. and Nadine da Silva and had a Christian upbringing.[6][7] He inherited his name from his father, who is a former footballer and became his son's advisor as Neymar's talents began to grow.[8] Neymar comments on his father's role: "My father has been by my side since I was little. He takes care of things, my finances and my family."[9] Growing up, Neymar combined his love of futsal with street football.[10] Neymar said that futsal had a massive influence on him growing up, helping him develop his technique, speed of thought and ability to perform moves in tight spaces.[11]
+        In 2003, Neymar moved with his family to São Vicente, where he began playing for youth side Portuguesa Santista.[12] Then, later in 2003, they moved to Santos, where Neymar joined Santos.[13] With the success of his youth career and added income, the family bought their first property, a house next to Vila Belmiro, Santos' home stadium. Their quality of family life improved, as at age 15, Neymar was earning 10,000 reais per month and at 16, 125,000 reais per month. At 17, he signed his first full professional contract, was upgraded to the Santos first team, and began signing his first sponsorship deals.
+        <h3>Club career</h3>
+        <b>Santos</b><br>
+        Neymar began playing football at an early age and he was soon spotted by Santos who offered him a contract in 2003; where he was inducted into their youth academy, which has, in the past, produced Brazilian internationals like Coutinho, Clodoaldo, Diego, Elano and Alex. He also joined the likes of Pepe, Pelé and Robinho in starting out his career at the club, nicknamed Peixe.[15] While in the youth academy, Neymar met Paulo Henrique Ganso, becoming good friends in the process. Aged 14, Neymar travelled to Spain for try outs with the Real Madrid youth team. He did not stay in Madrid, however, as his father decided at the time that he preferred the young prodigy to keep growing up while playing at Santos.[16][17]
+        2009: Debut season
+        Neymar made his professional debut on 7 March 2009, despite being only 17 years old. He was brought on for the last thirty minutes, in a 2–1 win against Oeste.[10] The following week he scored his first goal for Santos against Mogi Mirim. One month later, on 11 April, Neymar scored the decisive goal in a 2–1 win against Palmeiras in the 2009 Campeonato Paulista semi-final first leg.[18] In the final, however, Santos suffered a 4–2 aggregate defeat to Corinthians.[19] In his first season, Neymar racked up 14 goals in 48 games
+        <br><h4>to be continues...</h4>
+    </p>
+
+    <script>
+          // RGB Footer animation
+          const footer = document.getElementById('rgbFooter');
+        let hue = 0;
+        
+        function changeFooterColor() {
+            hue = (hue + 3) % 360;
+            footer.style.backgroundColor = `hsl(${hue}, 100%, 50%)`;
+        }
+        
+        // Initial call and set interval
+        changeFooterColor();
+        setInterval(changeFooterColor, 50);
+    </script>
+</body>
+</html>
